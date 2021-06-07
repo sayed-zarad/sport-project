@@ -1,6 +1,6 @@
 /*start variables*/
 :root {
-  --main-color: #10cab7;
+  --main-color: black;
   --secondary-color: #2c4755;
   --section-padding: 60px;
   --section-background: #f6f6f6;
@@ -86,7 +86,7 @@ body {
   flex-direction: row-reverse;
 }
 .header .links .icon span {
-  background-color: black;
+  background-color: white;
   margin-bottom: 5px;
   height: 2px;
 }
@@ -140,7 +140,7 @@ body {
 /* end header */
 /* start landing section */
 .landing {
-  background-image: url(../images/img-bg-01.jpg);
+  background-image: url(../images1/cover.jpg);
   background-size: cover;
   height: calc(100vh - 64px);
   position: relative;
@@ -163,7 +163,7 @@ body {
 .landing .intro-text p {
   font-size: 19px;
   line-height: 1.8;
-  color: #ffce1b;
+  color: white;
 }
 /* end landing section */
 /* start features */
@@ -225,7 +225,7 @@ body {
 }
 .services .services-content .image::before {
   content: "";
-  background-color: var(--secondary-color);
+  background-color: var(--main-color);
   width: 100px;
   height: calc(100% + 100px);
   position: absolute;
@@ -241,6 +241,39 @@ body {
   }
 }
 /* end services */
+
+/* start memories */
+.memories {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
+}
+.memories .memories-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+  margin-top: 80px;
+}
+.memories .memories-content .card {
+  background-color: var(--main-color);
+  height: 20vh;
+}
+.memories .memories-content .card .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.memories .memories-content .card .image img {
+  max-width: 100%;
+}
+.memories .memories-content .card:hover .image {
+  padding-top: 20px;
+}
+
+/* end memories */
+
 /* start rate */
 .rate {
   padding-top: var(--section-padding);
@@ -328,17 +361,13 @@ body {
 
 /* start footer */
 .footer {
-  background-color: var(--secondary-color);
+  background-color: var(--main-color);
   color: white;
-  width: 100%;
-  padding: 40px 10px;
+  padding: 30px 10px;
   text-align: center;
   font-size: 18px;
-  position: fixed;
-  bottom: 0;
 }
 /* end footer */
-
 * {
   box-sizing: border-box;
 }
