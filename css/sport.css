@@ -140,7 +140,7 @@ body {
 /* end header */
 /* start landing section */
 .landing {
-  background-image: url(../images1/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-size: cover;
   height: calc(100vh - 64px);
   position: relative;
@@ -235,7 +235,7 @@ body {
 .services .services-content .image img {
   width: 300px;
 }
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
   .image-column {
     display: none;
   }
@@ -470,3 +470,73 @@ input {
 }
 
 /* start register */
+.text-center {
+  text-align: center;
+}
+
+.pricing-box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.pricing-box {
+  background-color: var(--secondary-color);
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  flex: 1;
+  padding: 0 30px 30px;
+  margin: 2%;
+  min-width: 250px;
+  max-width: 350px;
+}
+
+.pricing-box h5 {
+  text-transform: uppercase;
+}
+
+.price {
+  margin: 24px 0;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.price sub,
+.price sup {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.features-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.features-list li {
+  font-weight: 100;
+  padding: 12px 0;
+  font-weight: 100;
+}
+
+.features-list li:not(:last-of-type) {
+  border-bottom: 1px solid white;
+}
+
+.btn-primary {
+  border-radius: 25px;
+  border: none;
+  background-color: #ec1362;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
+}
+
+.btn-primary:hover {
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+  transform: translateY(-3px);
+}

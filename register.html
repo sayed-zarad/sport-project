@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>register</title>
     <!-- main template css file -->
     <link rel="stylesheet" href="css/sport.css">
     <!-- render all elements normally -->
@@ -27,8 +27,9 @@
                 </span>
                 <ul>
                     <li><a href="index.html">home</a></li>
-                    <li><a href="register.html">register</a></li>
                     <li><a href="services.html">services</a></li>
+                    <li><a href="pricing-table.html">pricing table</a></li>
+                    <li><a href="register.html">register</a></li>
                     <li><a href="rate.html">rate</a></li>
                     <li><a href="memories.html">memories</a></li>
                 </ul>
@@ -45,21 +46,48 @@
                     <small>Let us create your account</small>
                 </h2>
             </div>
-            <form class="form-form">
+            <form class="form-form" action="" id="Form">
                 <div class="input">
-                    <input type="text" class="input-field" placeholder="Alexander Parkinson" required/>
-                    <label class="input-label">Full name</label>
+                    <input type="text" class="input-field" name="first-name"  id="Fname" />
+                    <label class="input-label">First name</label>
                 </div>
                 <div class="input">
-                    <input type="text" class="input-field" placeholder="vlockn@gmail.com" required/>
+                    <input type="text" class="input-field" name="last-name" id="Lname" />
+                    <label class="input-label">Last name</label>
+                </div>
+                <div class="input">
+                    <input type="test" class="input-field" name="Email" placeholder="vlockn@gmail.com" id="email" />
                     <label class="input-label">Email</label>
                 </div>
                 <div class="input">
-                    <input type="password" class="input-field" required/>
+                    <input type="password" name="password" id="password" class="input-field" />
                     <label class="input-label">Password</label>
                 </div>
+                <div class="input">
+                    <input type="text" name="telephone" class="input-field" id="telephone" />
+                    <label class="input-label">Telephone </label>
+                </div>
+                <div class="input">
+                    <input type="text" class="input-field" name="address"  />
+                    <label class="input-label">Address</label>
+                </div>
+                <div class="input">
+                    <select name="gender" id="gender" class="input-field">
+                            <option value="male" selected>male</option>
+                            <option value="female">female</option>
+                    </select>
+                    <label class="input-label">Gender </label>
+                </div>
+                <div class="input">
+                    <select name="plane" id="plane" class="input-field">
+                            <option value="male" selected>Free</option>
+                            <option value="female">Premium</option>
+                            <option value="female">Platinum</option>
+                    </select>
+                    <label class="input-label">Plane </label>
+                </div>
                 <div class="action">
-                    <button class="action-button">Get started</button>
+                    <input name="submit"  type="submit" class="action-button" value="Get started">
                 </div>
             </form>
     </div>
@@ -72,3 +100,4 @@
     <!-- end footer -->
 </body>
 </html>
+<script src="register.js"></script>
