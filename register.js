@@ -61,6 +61,7 @@ function validate(){
 	}
 	if(check==true){
 		alert("thanks for join to us");
+		window.location.href='index.html';
 	}
 	return check;
 }
