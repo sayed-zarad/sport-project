@@ -60,7 +60,7 @@ function validate(){
 		check=false;
 	}
 	if(check==true){
-		alert("thanks for join to us");
+		alert('thanks '+Fname+" "+Lname+' for join to us');
 		window.location.href='index.html';
 	}
 	return check;
